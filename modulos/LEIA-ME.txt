@@ -1,0 +1,17 @@
+EDRAS | Lcbanker Advisory — pacote PWA
+
+Arquivos:
+- index.html: calculadora HTML atual
+- manifest.webmanifest: nome, ícone e configuração instalável
+- service-worker.js: cache básico para abrir a aplicação depois da primeira visita
+- icons/: ícones 192x192 e 512x512
+
+Como publicar:
+1. Extraia este ZIP para uma pasta.
+2. Publique o conteúdo da pasta em um serviço de hospedagem estática com HTTPS (por exemplo, Render Static Site ou Netlify).
+3. Aponte a publicação para a pasta que contém index.html.
+4. Abra a URL HTTPS no Chrome do Android.
+5. No menu ⋮, escolha “Instalar app” ou “Adicionar à tela inicial”.
+
+Observação importante:
+Este pacote torna a interface instalável como PWA. Não cria automaticamente uma conta de usuário, banco de dados, sincronização de respostas ou publicação na Google Play. As respostas de clientes precisam de backend seguro e política de privacidade antes de uso comercial. O modo offline é um cache básico e não sincroniza dados enviados offline.
