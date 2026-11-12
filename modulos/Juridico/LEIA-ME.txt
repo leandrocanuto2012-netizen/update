@@ -1,0 +1,16 @@
+ASSADOS NOBRE ERP — PACOTE DE MÓDULOS
+
+Conteúdo:
+- 03-modulos-gestao.sql
+- gestao-router.js
+
+IMPORTANTE:
+Este pacote contém arquivos-base recuperados para revisão e integração. Não representa módulos concluídos nem homologados em produção.
+
+Antes de integrar:
+1. Faça backup do repositório e do banco Supabase.
+2. Revise o SQL contra o esquema atual, especialmente IDs, unidade_id, tabelas e políticas RLS.
+3. Não execute o SQL em produção antes da revisão.
+4. O router precisa receber as funções reais de autenticação e autorização já usadas pelo ERP. Não crie autenticação fictícia.
+5. Não substitua server-supabase.js, package.json, credenciais, tabelas ou dados existentes.
+6. Integre em branch isolada e teste cadastros, consultas, edição, exclusão e permissões antes de mesclar.
